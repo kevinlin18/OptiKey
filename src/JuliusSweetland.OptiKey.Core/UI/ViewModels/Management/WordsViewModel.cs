@@ -39,6 +39,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
                 return new List<KeyValuePair<string, Languages>>
                 {
                     new KeyValuePair<string, Languages>(Resources.CATALAN_SPAIN, Enums.Languages.CatalanSpain),
+                    new KeyValuePair<string, Languages>(Resources.CHINESE_TRADITIONAL_TAIWAN, Enums.Languages.ChineseTraditionalTaiwan),
                     new KeyValuePair<string, Languages>(Resources.CROATIAN_CROATIA, Enums.Languages.CroatianCroatia),
                     new KeyValuePair<string, Languages>(Resources.CZECH_CZECH_REPUBLIC, Enums.Languages.CzechCzechRepublic),
                     new KeyValuePair<string, Languages>(Resources.DANISH_DENMARK, Enums.Languages.DanishDenmark),

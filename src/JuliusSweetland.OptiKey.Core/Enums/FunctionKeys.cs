@@ -22,6 +22,7 @@ namespace JuliusSweetland.OptiKey.Enums
         BrowserSearch,
         Calibrate,
         CatalanSpain,
+        ChineseTraditionalTaiwan,
         ClearScratchpad,
         CollapseDock,
         CommuniKate,

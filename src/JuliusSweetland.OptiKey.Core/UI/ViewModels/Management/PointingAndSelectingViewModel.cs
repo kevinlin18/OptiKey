@@ -546,6 +546,7 @@ namespace JuliusSweetland.OptiKey.UI.ViewModels.Management
                 new KeyValueAndTimeSpanGroup(Resources.LANGUAGES_KEY_GROUP, new List<KeyValueAndTimeSpan>
                 {
                     new KeyValueAndTimeSpan(Resources.CATALAN_SPAIN, KeyValues.CatalanSpainKey, dictionary.ContainsKey(KeyValues.CatalanSpainKey) ? dictionary[KeyValues.CatalanSpainKey] : null),
+                    new KeyValueAndTimeSpan(Resources.CHINESE_TRADITIONAL_TAIWAN, KeyValues.ChineseTraditionalTaiwanKey, dictionary.ContainsKey(KeyValues.ChineseTraditionalTaiwanKey) ? dictionary[KeyValues.ChineseTraditionalTaiwanKey] : null),
                     new KeyValueAndTimeSpan(Resources.CROATIAN_CROATIA, KeyValues.CroatianCroatiaKey,dictionary.ContainsKey(KeyValues.CroatianCroatiaKey) ? dictionary[KeyValues.CroatianCroatiaKey] :  null),
                     new KeyValueAndTimeSpan(Resources.CZECH_CZECH_REPUBLIC, KeyValues.CzechCzechRepublicKey, dictionary.ContainsKey(KeyValues.CzechCzechRepublicKey) ? dictionary[KeyValues.CzechCzechRepublicKey] :  null),
                     new KeyValueAndTimeSpan(Resources.DANISH_DENMARK, KeyValues.DanishDenmarkKey,dictionary.ContainsKey(KeyValues.DanishDenmarkKey) ? dictionary[KeyValues.DanishDenmarkKey] :  null),

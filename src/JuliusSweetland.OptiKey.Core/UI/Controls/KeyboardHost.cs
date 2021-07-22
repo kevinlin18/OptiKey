@@ -19,6 +19,7 @@ using System.Windows;
 using System.Windows.Controls;
 using JuliusSweetland.OptiKey.UI.Windows;
 using CatalanViews = JuliusSweetland.OptiKey.UI.Views.Keyboards.Catalan;
+using ChineseTraditionalViews = JuliusSweetland.OptiKey.UI.Views.Keyboards.ChineseTraditional;
 using CommonViews = JuliusSweetland.OptiKey.UI.Views.Keyboards.Common;
 using CroatianViews = JuliusSweetland.OptiKey.UI.Views.Keyboards.Croatian;
 using CzechViews = JuliusSweetland.OptiKey.UI.Views.Keyboards.Czech;
@@ -223,6 +224,9 @@ namespace JuliusSweetland.OptiKey.UI.Controls
                 {
                     case Languages.CatalanSpain:
                         newContent = new CatalanViews.Alpha1 { DataContext = Keyboard };
+                        break;
+                    case Languages.ChineseTraditionalTaiwan:
+                        newContent = new ChineseTraditionalViews.Alpha1 { DataContext = Keyboard };
                         break;
                     case Languages.CroatianCroatia:
                         newContent = new CroatianViews.Alpha1 { DataContext = Keyboard };

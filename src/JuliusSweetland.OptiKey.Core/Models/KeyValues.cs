@@ -27,6 +27,7 @@ namespace JuliusSweetland.OptiKey.Models
         public static readonly KeyValue BrowserSearchKey = new KeyValue(FunctionKeys.BrowserSearch);
         public static readonly KeyValue CalibrateKey = new KeyValue(FunctionKeys.Calibrate);
         public static readonly KeyValue CatalanSpainKey = new KeyValue(FunctionKeys.CatalanSpain);
+        public static readonly KeyValue ChineseTraditionalTaiwanKey = new KeyValue(FunctionKeys.ChineseTraditionalTaiwan);
         public static readonly KeyValue ClearScratchpadKey = new KeyValue(FunctionKeys.ClearScratchpad);
         public static readonly KeyValue CollapseDockKey = new KeyValue(FunctionKeys.CollapseDock);
         public static readonly KeyValue CombiningAcuteAccentKey = new KeyValue("\x0301");

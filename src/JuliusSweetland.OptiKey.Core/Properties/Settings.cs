@@ -2223,6 +2223,9 @@ namespace JuliusSweetland.OptiKey.Properties {
             "icks>\r\n    </value>\r\n  </item>\r\n  <item>\r\n    <key>\r\n      <keyValue>\r\n        <" +
             "functionKey>BackFromKeyboard</functionKey>\r\n      </keyValue>\r\n    </key>\r\n    <" +
             "value>\r\n      <ticks>PT1.75S</ticks>\r\n    </value>\r\n  </item>\r\n  <item>\r\n    <ke" +
+            "y>\r\n      <keyValue>\r\n        <functionKey>ChineseTraditionalTaiwan</functionK" +
+            "ey>\r\n      </keyValue>\r\n    </key>\r\n    <value>\r\n      <ticks>PT1.75S</ticks>\r\n " +
+            "   </value>\r\n  </item>\r\n   <item>\r\n    <ke" +
             "y>\r\n      <keyValue>\r\n        <functionKey>ConversationAlpha1Keyboard</functionK" +
             "ey>\r\n      </keyValue>\r\n    </key>\r\n    <value>\r\n      <ticks>PT1.75S</ticks>\r\n " +
             "   </value>\r\n  </item>\r\n  <item>\r\n    <key>\r\n      <keyValue>\r\n        <function" +

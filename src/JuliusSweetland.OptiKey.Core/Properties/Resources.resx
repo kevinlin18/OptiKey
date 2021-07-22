@@ -2422,4 +2422,15 @@ Magyar
   <data name="TOBII_PCEYE_5" xml:space="preserve">
     <value>Tobii PCEye 5</value>
   </data>
+  <data name="CHINESE_TRADITIONAL_TAIWAN" xml:space="preserve">
+    <value>Chinese Traditional (Taiwan) / 正體中文 (台灣)</value>
+    <comment>CHINESE_TRADITIONAL_TAIWAN</comment>
+  </data>
+  <data name="CHINESE_TRADITIONAL_TAIWAN_SPLIT_WITH_NEWLINE" xml:space="preserve">
+    <value>Chinese Traditional
+(Taiwan) /
+正體中文
+(台灣)</value>
+    <comment>CHINESE_TRADITIONAL_TAIWAN</comment>
+  </data>
 </root>
