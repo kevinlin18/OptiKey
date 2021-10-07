@@ -949,6 +949,17 @@ namespace JuliusSweetland.OptiKey.Services
                     lastProcessedTextWasSuggestion = true;
                 }
 
+                // Chinese bopomofo
+                if (root != null && Settings.Default.KeyboardAndDictionaryLanguage == Languages.ChineseTraditionalTaiwan)
+                {
+                    StringBuilder result = new StringBuilder(root);
+                    for (int index = 0; index < root.Length; index++)
+                    {
+                        result[index] = result[index].BopomofoToQwerty();
+                    }
+                    root = result.ToString();
+                }
+
                 var suggestions = dictionaryService.GetSuggestions(root, nextWord)
                     .Take(Settings.Default.MaxDictionaryMatchesOrSuggestions)
                     .ToList();

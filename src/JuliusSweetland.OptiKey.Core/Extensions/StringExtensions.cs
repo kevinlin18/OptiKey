@@ -327,6 +327,23 @@ namespace JuliusSweetland.OptiKey.Extensions
                 && cursorIndex <= input.Length
                 && !char.IsWhiteSpace(input[cursorIndex-1])) //Character before cursor position is not whitespace, i.e. at least 1 letter of the word is before the cursor position
             {
+                //Chinese Bopomofo
+                if (input[cursorIndex - 1].UnicodeCodePointRange() == UnicodeCodePointRanges.ChineseBopomofo)
+                {
+                    int MstartIndex = cursorIndex;
+                    int MendIndex = MstartIndex;
+                    while (MstartIndex > 0
+                    && input[MstartIndex - 1].UnicodeCodePointRange() == UnicodeCodePointRanges.ChineseBopomofo)
+                    {
+                        MstartIndex--;
+                    }
+                    while (MendIndex < input.Length
+                    && input[MstartIndex].UnicodeCodePointRange() == UnicodeCodePointRanges.ChineseBopomofo)
+                    {
+                        MendIndex++;
+                    }
+                    return input.Substring(MstartIndex, MendIndex - MstartIndex);
+                }
                 //Count back
                 int startIndex = cursorIndex;
                 while (startIndex > 0

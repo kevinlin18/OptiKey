@@ -137,7 +137,7 @@
     <value>已加入</value>
   </data>
   <data name="ADJUST_BY" xml:space="preserve">
-    <value>調整量 {0} pixel|調整量 by {0} pixels</value>
+    <value>調整量 {0} pixel|調整量 {0} pixels</value>
   </data>
   <data name="ALPHA_1" xml:space="preserve">
     <value>文字 1</value>
@@ -179,7 +179,7 @@
     <value>刪除單字</value>
   </data>
   <data name="BASS_UNABLE_TO_CREATE_STREAM_FROM_FILE" xml:space="preserve">
-    <value>Bass was unable to create a stream from file '{0}'</value>
+    <value>Bass 無法從檔案「{0}」建立 Stream</value>
   </data>
   <data name="BOTTOM" xml:space="preserve">
     <value>下</value>
@@ -213,7 +213,7 @@
     <value>取消</value>
   </data>
   <data name="CAPTURE_TIMEOUT_LABEL" xml:space="preserve">
-    <value>Capture timeout (ms):</value>
+    <value>捕捉逾時 (ms)：</value>
   </data>
   <data name="CHECK_FOR_UPDATES_AT_STARTUP_LABEL" xml:space="preserve">
     <value>啟動時檢查更新：</value>
@@ -244,11 +244,11 @@
     <value>點擊 6</value>
   </data>
   <data name="COLLAPSE_DOCK_SPLIT_WITH_NEWLINE" xml:space="preserve">
-    <value>COLLAPSE
-DOCK</value>
+    <value>摺疊
+基座</value>
   </data>
   <data name="COLLAPSED_DOCK_THICKNESS" xml:space="preserve">
-    <value>Collapsed dock thickness (as % of full dock thickness):</value>
+    <value>摺疊後的基座厚度（相對於完整基座的百分比）：</value>
   </data>
   <data name="CONTEXTUAL_MENU_KEY" xml:space="preserve">
     <value>選單</value>
@@ -266,11 +266,11 @@ DOCK</value>
     <value>只啟用對話模式：</value>
   </data>
   <data name="CORRUPTED_SETTINGS_MESSAGE" xml:space="preserve">
-    <value>Optikey has detected that your user settings file has become corrupted and must be repaired. This will be done by restoring an old version, or a default version if that isn't possible.
+    <value>Optikey 偵測到您的設定檔已損毀且需要修復。可以藉由還原到舊版來完成，不行的話則需還原為預設版本。
 
-Click Yes to reset your user settings and restart.
+點擊 [是] 以重設您的使用者設定並重新啟動。
 
-Click No to close so that you can manually repair or copy your user settings file.</value>
+點擊 [否] 以關閉程式，讓您手動修復或複製您的使用者設定檔。</value>
   </data>
   <data name="CORRUPTED_SETTINGS_TITLE" xml:space="preserve">
     <value>噢不！使用者設定檔已經損毀了。</value>
@@ -344,16 +344,16 @@ Dansk
     <value>字典</value>
   </data>
   <data name="DICTIONARY_FILE_NOT_FOUND_ERROR" xml:space="preserve">
-    <value>No user dictionary exists and original dictionary could not be found at path: '{0}'</value>
+    <value>找不到使用者字典檔，且未在「{0}」找到原始字典檔。</value>
   </data>
   <data name="DISPLAY_FOR_X_SECONDS_PER_CHARACTER_LABEL" xml:space="preserve">
     <value>訊息中的每個字元顯示 X 秒鐘：</value>
   </data>
   <data name="DO_AT_CURRENT_LOCATION" xml:space="preserve">
-    <value>Do at current location...</value>
+    <value>在目前的位置執行...</value>
   </data>
   <data name="DO_AT_POINT" xml:space="preserve">
-    <value>Do at point...</value>
+    <value>選擇位置後執行...</value>
   </data>
   <data name="DOWN_ARROW_SPLIT_WITH_NEWLINE" xml:space="preserve">
     <value>下
@@ -390,8 +390,8 @@ Dansk
     <value>放大</value>
   </data>
   <data name="EXPAND_DOCK_SPLIT_WITH_NEWLINE" xml:space="preserve">
-    <value>EXPAND
-DOCK</value>
+    <value>放大
+基座</value>
   </data>
   <data name="EXPAND_DOWN_AND_LEFT_SPLIT_WITH_NEWLINE" xml:space="preserve">
     <value>向左下
@@ -453,7 +453,7 @@ DOCK</value>
     <value>French (France) / Française (France)</value>
   </data>
   <data name="FULL_DOCK_THICKNESS_LABEL" xml:space="preserve">
-    <value>Full dock thickness (as % of screen):</value>
+    <value>完整的基座厚度（畫面百分比）：</value>
   </data>
   <data name="GAZE_TRACKER" xml:space="preserve">
     <value>Gaze Tracker</value>
@@ -468,7 +468,7 @@ DOCK</value>
     <value>水平填充（畫面百分比）：</value>
   </data>
   <data name="INCOMPLETE_KEY_FIXATION_TTL_LABEL" xml:space="preserve">
-    <value>Time before incomplete key fixations expire (ms):</value>
+    <value>未完成的按鍵失效前的固定時間 (ms)：</value>
   </data>
   <data name="INCREASE_OPACITY_SPLIT_WITH_NEWLINE" xml:space="preserve">
     <value>增加
@@ -481,61 +481,57 @@ DOCK</value>
     <value>INS</value>
   </data>
   <data name="INTELLIGENTLY_SUPPRESS_AUTO_CAPS" xml:space="preserve">
-    <value>...but intelligently suppress auto-caps where it is probably unhelpful:</value>
+    <value>...但對於智慧抑制自動 caps 可能沒有幫助：</value>
   </data>
   <data name="INVALID_KEYBOARD_AND_LANGUAGE_ERROR" xml:space="preserve">
     <value>目前的鍵盤和語言組合是無效的</value>
   </data>
   <data name="JUMP" xml:space="preserve">
-    <value>JUMP</value>
+    <value>跳躍</value>
   </data>
   <data name="JUMP_DOWN_AND_LEFT_SPLIT_WITH_NEWLINE" xml:space="preserve">
-    <value>JUMP
-DOWN
-&amp; LEFT</value>
+    <value>向左下
+跳躍</value>
   </data>
   <data name="JUMP_DOWN_AND_RIGHT_SPLIT_WITH_NEWLINE" xml:space="preserve">
-    <value>JUMP
-DOWN
-&amp; RIGHT</value>
+    <value>向右下
+跳躍</value>
   </data>
   <data name="JUMP_DOWN_SPLIT_WITH_NEWLINE" xml:space="preserve">
-    <value>JUMP
-DOWN</value>
+    <value>向下
+跳躍</value>
   </data>
   <data name="JUMP_LEFT_SPLIT_WITH_NEWLINE" xml:space="preserve">
-    <value>JUMP
-LEFT</value>
+    <value>向左
+跳躍</value>
   </data>
   <data name="JUMP_RIGHT_SPLIT_WITH_NEWLINE" xml:space="preserve">
-    <value>JUMP
-RIGHT</value>
+    <value>向右
+跳躍</value>
   </data>
   <data name="JUMP_UP_AND_LEFT_SPLIT_WITH_NEWLINE" xml:space="preserve">
-    <value>JUMP
-UP &amp;
-LEFT</value>
+    <value>向左上
+跳躍</value>
   </data>
   <data name="JUMP_UP_AND_RIGHT_SPLIT_WITH_NEWLINE" xml:space="preserve">
-    <value>JUMP
-UP &amp;
-RIGHT</value>
+    <value>向右上
+跳躍</value>
   </data>
   <data name="JUMP_UP_SPLIT_WITH_NEWLINE" xml:space="preserve">
-    <value>JUMP
-UP</value>
+    <value>向上
+跳躍</value>
   </data>
   <data name="KEY_CASE_LABEL" xml:space="preserve">
     <value>按鍵字母轉換：</value>
   </data>
   <data name="COMPLETION_TIMES_HINT" xml:space="preserve">
-    <value>以半型逗號「,」分隔多個數值以提升、提降接下來的選擇速度，範例：1250,750,450,250</value>
+    <value>以半型逗號「,」分隔多個數值以提升、降低接下來的選擇速度，範例：1250,750,450,250</value>
   </data>
   <data name="KEY_FIXATION_TIME_TO_COMPLETE_LABEL" xml:space="preserve">
-    <value>Time to complete and repeat a key (ms):</value>
+    <value>完成並重複按鍵的時間 (ms)：</value>
   </data>
   <data name="KEY_FIXATION_TIME_TO_LOCK_ON_LABEL" xml:space="preserve">
-    <value>Key fixation time to lock-on (ms):</value>
+    <value>鎖定按鍵的固定時間 (ms)：</value>
   </data>
   <data name="KEY_SELECTION_KEYBOARD_KEY_LABEL" xml:space="preserve">
     <value>按鍵選擇鍵盤按鍵：</value>
@@ -583,8 +579,8 @@ UP</value>
 雙擊</value>
   </data>
   <data name="LEFT_DOWN_UP_SPLIT_WITH_NEWLINE" xml:space="preserve">
-    <value>LEFT
-DOWN/UP</value>
+    <value>左鍵
+點/放</value>
   </data>
   <data name="LOOK" xml:space="preserve">
     <value>外觀</value>
@@ -593,8 +589,8 @@ DOWN/UP</value>
     <value>全部小寫</value>
   </data>
   <data name="MAGNETIC_CURSOR_SPLIT_WITH_NEWLINE" xml:space="preserve">
-    <value>MAGNETIC
-CURSOR</value>
+    <value>磁性
+遊標</value>
   </data>
   <data name="MAGNIFIER" xml:space="preserve">
     <value>放大鏡</value>
@@ -603,10 +599,10 @@ CURSOR</value>
     <value>在螢幕中間顯示放大鏡視窗：</value>
   </data>
   <data name="MAGNIFY_DESTINATION_LABEL" xml:space="preserve">
-    <value>Magnified View (Maximum % of screen to fill):</value>
+    <value>放大鏡視窗（最多填滿螢幕的比例）：</value>
   </data>
   <data name="MAGNIFY_SOURCE_LABEL" xml:space="preserve">
-    <value>Magnifier Selection (% of screen to capture):</value>
+    <value>放大鏡選擇（截取螢幕的比例）：</value>
   </data>
   <data name="MANAGEMENT_CONSOLE_DESCRIPTION" xml:space="preserve">
     <value>管理控制台：ALT + M</value>
@@ -615,7 +611,7 @@ CURSOR</value>
     <value>Optikey 管理控制台</value>
   </data>
   <data name="MAX_DICTIONARY_MATCHES_LABEL" xml:space="preserve">
-    <value>Maximum number of dictionary matches:</value>
+    <value>從字典中查詢的最大數量：</value>
   </data>
   <data name="MENU" xml:space="preserve">
     <value>選單</value>
@@ -628,8 +624,8 @@ CURSOR</value>
 點擊</value>
   </data>
   <data name="MIDDLE_DOWN_UP_SPLIT_WITH_NEWLINE" xml:space="preserve">
-    <value>MIDDLE
-DOWN/UP</value>
+    <value>中鍵
+點/放</value>
   </data>
   <data name="MINIMISE" xml:space="preserve">
     <value>最小化</value>
@@ -641,7 +637,7 @@ DOWN/UP</value>
     <value>最小化時的位置：</value>
   </data>
   <data name="MINIMUM_DWELL_TIME_TO_INCLUDE_IN_CAPTURE" xml:space="preserve">
-    <value>Minimum dwell time on a key to include in capture (ms):</value>
+    <value>捕捉按鍵時至少要停留的時間 (ms)：</value>
   </data>
   <data name="MISC" xml:space="preserve">
     <value>其他</value>
@@ -701,7 +697,7 @@ DOWN/UP</value>
     <value>滑鼠位置</value>
   </data>
   <data name="MOUSE_POSITION_SAMPLE_INTERVAL_LABEL" xml:space="preserve">
-    <value>Mouse position sample interval (ms):</value>
+    <value>滑鼠位置取樣間隔 (ms)：</value>
   </data>
   <data name="MOUSE_SCROLL_SOUND_1" xml:space="preserve">
     <value>滑鼠滾輪 1</value>
@@ -850,13 +846,13 @@ LK</value>
     <value>確定</value>
   </data>
   <data name="OPTIKEY_PRO_DESCRIPTION" xml:space="preserve">
-    <value>Optikey Pro : Computer Control &amp; Communication</value>
+    <value>Optikey Pro : 電腦控制 &amp; 對話</value>
   </data>
   <data name="OTHER" xml:space="preserve">
     <value>其他</value>
   </data>
   <data name="PARENT_WINDOW_COULD_NOT_BE_FOUND" xml:space="preserve">
-    <value>Parent Window could not be identified. Unable to continue</value>
+    <value>無法識別母視窗，無法繼續</value>
   </data>
   <data name="PG_DN_SPLIT_WITH_NEWLINE" xml:space="preserve">
     <value>PG
@@ -879,16 +875,16 @@ UP</value>
     <value>指向和選擇</value>
   </data>
   <data name="POINT_FIXATION_RADIUS_LABEL" xml:space="preserve">
-    <value>Point fixation radius (pixels):</value>
+    <value>定點固定半徑 (pixels)：</value>
   </data>
   <data name="POINT_FIXATION_TIME_TO_COMPLETE_LABEL" xml:space="preserve">
-    <value>Point fixation time to complete (ms):</value>
+    <value>完成定點的固定時間 (ms)：</value>
   </data>
   <data name="POINT_FIXATION_TIME_TO_LOCK_ON_LABEL" xml:space="preserve">
-    <value>Point fixation time to lock-on (ms):</value>
+    <value>鎖定定點的固定時間 (ms)：</value>
   </data>
   <data name="POINT_LOCK_ON_RADIUS_LABEL" xml:space="preserve">
-    <value>Point lock-on radius (pixels):</value>
+    <value>鎖定定點半徑 (pixels)：</value>
   </data>
   <data name="POINT_SELECTION_DESCRIPTION" xml:space="preserve">
     <value>指向選擇：{0}</value>
@@ -934,11 +930,11 @@ SCR</value>
     <value>重新校正</value>
   </data>
   <data name="REPEAT_LAST_SPLIT_WITH_NEWLINE" xml:space="preserve">
-    <value>REPEAT
-LAST</value>
+    <value>重複
+上一個</value>
   </data>
   <data name="REQUIRED_SERVICES_NOT_PASSED_TO_MANAGEMENT_WINDOW" xml:space="preserve">
-    <value>Audio and/or Dictionary service(s) were/was not supplied to the management window action.</value>
+    <value>聲音和／或字典服務未提供視窗管理動作。</value>
   </data>
   <data name="RESTART_MESSAGE" xml:space="preserve">
     <value>Optikey 需要重新啟動以套用您的變更。
@@ -948,7 +944,7 @@ LAST</value>
     <value>復原</value>
   </data>
   <data name="RESUMING_INCOMPLETE_KEY_FIXATION_REQUIRES_NEW_LOCK_ON_LABEL" xml:space="preserve">
-    <value>Resuming an incomplete key fixation requires a new lock on:</value>
+    <value>恢復固定未完成的按鍵時需要重新鎖定：</value>
   </data>
   <data name="RIGHT" xml:space="preserve">
     <value>右</value>
@@ -962,8 +958,8 @@ LAST</value>
 點擊</value>
   </data>
   <data name="RIGHT_UP_DOWN_SPLIT_WITH_NEWLINE" xml:space="preserve">
-    <value>RIGHT
-DOWN/UP</value>
+    <value>右鍵
+點/放</value>
   </data>
   <data name="RISING_SOUND_1" xml:space="preserve">
     <value>上升 1</value>
@@ -1008,13 +1004,13 @@ LK</value>
     <value>選擇</value>
   </data>
   <data name="SELECTION_PROGRESS_INDICATOR_BEHAVIOUR_LABEL" xml:space="preserve">
-    <value>Selection progress indicator behaviour:</value>
+    <value>選擇進度指示器樣式：</value>
   </data>
   <data name="SELECTION_PROGRESS_INDICATOR_END_SIZE_LABEL" xml:space="preserve">
-    <value>Selection progress indicator end size (%):</value>
+    <value>選擇進度指示器結束大小 (%)：</value>
   </data>
   <data name="SELECTION_PROGRESS_INDICATOR_START_SIZE_LABEL" xml:space="preserve">
-    <value>Selection progress indicator start size (%):</value>
+    <value>選擇進度指示器開始大小 (%)：</value>
   </data>
   <data name="SHIFT" xml:space="preserve">
     <value>SHIFT</value>
@@ -1086,10 +1082,10 @@ LK</value>
     <value>空白鍵</value>
   </data>
   <data name="SPEAK" xml:space="preserve">
-    <value>SPEAK</value>
+    <value>朗讀</value>
   </data>
   <data name="SPEECH" xml:space="preserve">
-    <value>語音</value>
+    <value>朗讀</value>
   </data>
   <data name="STARTUP_KEYBOARD_LABEL" xml:space="preserve">
     <value>啟動時的鍵盤：</value>
@@ -1104,7 +1100,7 @@ LK</value>
     <value>成功</value>
   </data>
   <data name="SUPPRESS_MODIFIERS_IN_MOUSE_KEYBOARD_LABEL" xml:space="preserve">
-    <value>Suppress modifier keys when in mouse keyboard:</value>
+    <value>在滑鼠鍵盤中時抑制修飾鍵：</value>
   </data>
   <data name="TAB" xml:space="preserve">
     <value>TAB</value>
@@ -1113,7 +1109,7 @@ LK</value>
     <value>The Eye Tribe</value>
   </data>
   <data name="THE_EYE_TRIBE_ACTIVATION_ERROR" xml:space="preserve">
-    <value>無法啟動 TheEyeTribe GazeManager！請檢查是否已啟動伺服器、改裝置是否已連接並再試一次。</value>
+    <value>無法啟動 TheEyeTribe GazeManager！請檢查是否已啟動伺服器、該裝置是否已連接並再試一次。</value>
   </data>
   <data name="THE_EYE_TRIBE_NOT_CALIBRATED" xml:space="preserve">
     <value>TheEyeTribe 尚未校正。校正完成前無法收到任何資料。</value>
@@ -1125,7 +1121,7 @@ LK</value>
     <value>主題：</value>
   </data>
   <data name="TIME_UNTIL_POINT_BECOMES_IRRELEVENT_LABEL" xml:space="preserve">
-    <value>Time until point becomes irrelevant (ms):</value>
+    <value>定點失效前的時間 (ms)：</value>
   </data>
   <data name="HIDE_CURSOR_LABEL" xml:space="preserve">
     <value>隱藏遊標</value>
@@ -1164,16 +1160,16 @@ LK</value>
     <value>音調 4</value>
   </data>
   <data name="TRIGGER_PRESSED_AGAIN" xml:space="preserve">
-    <value>Trigger button/key pressed again</value>
+    <value>觸發滑鼠/鍵盤按鍵再次點擊</value>
   </data>
   <data name="TRIGGER_RELEASED" xml:space="preserve">
-    <value>Trigger button/key released</value>
+    <value>觸發滑鼠/鍵盤按鍵釋放</value>
   </data>
   <data name="TRIGGER_WITHOUT_POSITION_ERROR" xml:space="preserve">
     <value>我無法偵錯到您的目光。輸入裝置有問題嗎？它有連接、開機跟校正了嗎？</value>
   </data>
   <data name="UNABLE_TO_DETERMINE_CURRENT_ELEVATION" xml:space="preserve">
-    <value>Unable to determine the current elevation.</value>
+    <value>無法判斷目前的高度。</value>
   </data>
   <data name="UNABLE_TO_SET_VOICE_WARNING" xml:space="preserve">
     <value>將語音設定為「{0}」時發生了問題{1}</value>
@@ -1286,7 +1282,7 @@ Deutsch
 (Deutschland)</value>
   </data>
   <data name="MAGNIFY_SUPPRESSED_FOR_SCROLLING_ACTIONS_LABEL" xml:space="preserve">
-    <value>Suppress mouse magnification for scrolling actions:</value>
+    <value>捲動時抑制滑鼠放大：</value>
   </data>
   <data name="RUSSIAN_RUSSIA_SPLIT_WITH_NEWLINE" xml:space="preserve">
     <value>Russian
@@ -1304,7 +1300,7 @@ Español
     <value>動態鍵盤選單</value>
   </data>
   <data name="CONVERSATION_BORDER_THICKNESS_LABEL" xml:space="preserve">
-    <value>Conversation keyboard border thickness (left,top,right,bottom in px):</value>
+    <value>對話鍵盤邊緣厚度（左、上、右、下，以 px 為單位）：</value>
   </data>
   <data name="BACK_ONE" xml:space="preserve">
     <value>刪除</value>
@@ -1337,7 +1333,7 @@ Español
     <value>加到字典</value>
   </data>
   <data name="COLLAPSE_DOCK" xml:space="preserve">
-    <value>COLLAPSE DOCK</value>
+    <value>摺疊基座</value>
   </data>
   <data name="DOWN_ARROW" xml:space="preserve">
     <value>下方向鍵</value>
@@ -1430,7 +1426,7 @@ Español
     <value>特殊符號 3</value>
   </data>
   <data name="EXPAND_DOCK" xml:space="preserve">
-    <value>EXPAND DOCK</value>
+    <value>放大基座</value>
   </data>
   <data name="EXPAND_DOWN" xml:space="preserve">
     <value>向下放大</value>
@@ -1475,49 +1471,49 @@ Español
     <value>大小和位置</value>
   </data>
   <data name="MAGNETIC_CURSOR" xml:space="preserve">
-    <value>MAGNETIC CURSOR</value>
+    <value>磁性遊標</value>
   </data>
   <data name="MIDDLE_CLICK" xml:space="preserve">
     <value>中鍵點擊</value>
   </data>
   <data name="MIDDLE_DOWN_UP" xml:space="preserve">
-    <value>MIDDLE DOWN/UP</value>
+    <value>中鍵 點/放</value>
   </data>
   <data name="MOVE_AMOUNT_IN_PIXEL" xml:space="preserve">
-    <value>MOVE AMOUNT IN PIXELS</value>
+    <value>以 px 為單位的移動量</value>
   </data>
   <data name="ADJUST_AMOUNT_IN_PIXELS" xml:space="preserve">
-    <value>ADJUST AMOUNT IN PIXELS</value>
+    <value>以 px 為單位的調整量</value>
   </data>
   <data name="CONVERSATION_ALPHA_1" xml:space="preserve">
-    <value>CONVERSATION ALPHA 1</value>
+    <value>對話文字 1</value>
   </data>
   <data name="CONVERSATION_NUMERIC_AND_SYMBOLS" xml:space="preserve">
     <value>對話數字符號</value>
   </data>
   <data name="JUMP_DOWN" xml:space="preserve">
-    <value>JUMP DOWN</value>
+    <value>向下跳躍</value>
   </data>
   <data name="JUMP_DOWN_AND_LEFT" xml:space="preserve">
-    <value>JUMP DOWN &amp; LEFT</value>
+    <value>向左下跳躍</value>
   </data>
   <data name="JUMP_DOWN_AND_RIGHT" xml:space="preserve">
-    <value>JUMP DOWN &amp; RIGHT</value>
+    <value>向右下跳躍</value>
   </data>
   <data name="JUMP_LEFT" xml:space="preserve">
-    <value>JUMP LEFT</value>
+    <value>向左跳躍</value>
   </data>
   <data name="JUMP_RIGHT" xml:space="preserve">
-    <value>JUMP RIGHT</value>
+    <value>向右跳躍</value>
   </data>
   <data name="JUMP_UP" xml:space="preserve">
-    <value>JUMP UP</value>
+    <value>向上跳躍</value>
   </data>
   <data name="JUMP_UP_AND_LEFT" xml:space="preserve">
-    <value>JUMP UP &amp; LEFT</value>
+    <value>向左上跳躍</value>
   </data>
   <data name="JUMP_UP_AND_RIGHT" xml:space="preserve">
-    <value>JUMP UP &amp; RIGHT</value>
+    <value>向右上跳躍</value>
   </data>
   <data name="LEFT_CLICK" xml:space="preserve">
     <value>左鍵點擊</value>
@@ -1526,7 +1522,7 @@ Español
     <value>左鍵雙擊</value>
   </data>
   <data name="LEFT_DOWN_UP" xml:space="preserve">
-    <value>LEFT DOWN/UP</value>
+    <value>左鍵 點/放</value>
   </data>
   <data name="MOVE_DOWN" xml:space="preserve">
     <value>向下移動</value>
@@ -1571,19 +1567,19 @@ Español
     <value>PRNT SCR</value>
   </data>
   <data name="REPEAT_LAST" xml:space="preserve">
-    <value>REPEAT LAST</value>
+    <value>重複上一個</value>
   </data>
   <data name="RIGHT_CLICK" xml:space="preserve">
     <value>右鍵點擊</value>
   </data>
   <data name="RIGHT_DOWN_UP" xml:space="preserve">
-    <value>RIGHT DOWN/UP</value>
+    <value>右鍵 點/放</value>
   </data>
   <data name="SCRN_LK" xml:space="preserve">
     <value>SCR LK</value>
   </data>
   <data name="SCROLL_AMOUNT_IN_CLICKS" xml:space="preserve">
-    <value>SCROLL AMOUNT IN CLICKS</value>
+    <value>以點擊為單位的捲動量</value>
   </data>
   <data name="SCROLL_DOWN" xml:space="preserve">
     <value>向下捲動</value>
@@ -1625,7 +1621,7 @@ Español
     <value>切換鍵盤鍵：</value>
   </data>
   <data name="DOCK_ACTIONS_KEY_GROUP" xml:space="preserve">
-    <value>DOCK ACTION KEYS:</value>
+    <value>基座動作鍵：</value>
   </data>
   <data name="INDIVIDUAL_KEY_FIXATION_TIME_TO_COMPLETE_LABEL" xml:space="preserve">
     <value>覆寫個別按鍵的固定時間 (ms)：</value>
@@ -1640,13 +1636,13 @@ Español
     <value>其他鍵：</value>
   </data>
   <data name="MODIFIER_KEYS_KEY_GROUP" xml:space="preserve">
-    <value>MODIFIER KEYS:</value>
+    <value>修飾鍵：</value>
   </data>
   <data name="MOUSE_DO_AT_CURRENT_LOCATION_KEY_GROUP" xml:space="preserve">
-    <value>MOUSE (DO AT CURRENT LOCATION) KEYS:</value>
+    <value>滑鼠（在目前的位置執行）按鍵：</value>
   </data>
   <data name="MOUSE_DO_AT_POINT_KEY_GROUP" xml:space="preserve">
-    <value>MOUSE (DO AT POINT) KEYS:</value>
+    <value>滑鼠（選擇位置後執行）按鍵：</value>
   </data>
   <data name="MOUSE_MISC_KEY_GROUP" xml:space="preserve">
     <value>滑鼠（其他）按鍵：</value>
@@ -1661,7 +1657,7 @@ Español
     <value>建議鍵：</value>
   </data>
   <data name="KEY_FIXATION_TIME_TO_COMPLETE_ON_INDIVIDUAL_KEYS" xml:space="preserve">
-    <value>Specify times to complete on individual keys:</value>
+    <value>指定完成個別按鍵的時間：</value>
   </data>
   <data name="GREEK_GREECE" xml:space="preserve">
     <value>Greek (Greece) / Ελληνικά (Ελλάδα)</value>
@@ -1709,7 +1705,7 @@ Nederlands
 (Nederland)</value>
   </data>
   <data name="SUPPRESS_MODIFIERS_FOR_ALL_MOUSE_ACTIONS" xml:space="preserve">
-    <value>Suppress modifier keys for all mouse actions:</value>
+    <value>對所有滑鼠動作抑制修飾鍵：</value>
   </data>
   <data name="ENGLISH_CANADA_SPLIT_WITH_NEWLINE" xml:space="preserve">
     <value>
@@ -1784,7 +1780,7 @@ Slovensko
 (Slovenija)</value>
   </data>
   <data name="MY_GAZE_CONNECT_ERROR" xml:space="preserve">
-    <value>Unable to connect to myGaze! Please check that the server is running and the device is connected and try again.</value>
+    <value>無法連線到 myGaze！請檢查是否已啟動伺服器、該裝置是否已連接並再試一次。</value>
   </data>
   <data name="VI_MYGAZE" xml:space="preserve">
     <value>Visual Interaction myGaze</value>
@@ -1847,7 +1843,7 @@ Slovenčina
     <value>使用按字母排序的鍵盤配置</value>
   </data>
   <data name="SMOOTH_WHEN_CHANGING_GAZE_TARGET" xml:space="preserve">
-    <value>Smooth when changing gaze target:</value>
+    <value>平滑改變視線目標：</value>
   </data>
   <data name="TOGGLE_MANUAL_MODE" xml:space="preserve">
     <value>切換滑鼠控制模式</value>
@@ -1943,13 +1939,13 @@ Slovenčina
 改回原本的設定。</value>
   </data>
   <data name="USING_DEFAULT_VOICE" xml:space="preserve">
-    <value>Setting the speech voice to the system voice: {0}.
-You can check the path for MaryTTS
-and change the voice back to it
-from the Management Console (ALT + M).</value>
+    <value>設定朗讀語音為系統語音：{0}。
+您可以檢查 MaryTTS 的路徑
+並從管理控制台 (ALT + M)
+將語音變更回來。</value>
   </data>
   <data name="SPEECH_DELAY_LABEL" xml:space="preserve">
-    <value>Delay before speech (ms):</value>
+    <value>朗讀前的延遲 (ms)：</value>
   </data>
   <data name="USE_COMMUNIKATE_KEYBOARD_LAYOUT" xml:space="preserve">
     <value>使用 CommuniKate 鍵盤配置</value>
@@ -1991,10 +1987,10 @@ Optikey 會嘗試繼續執行，但可能很快就會當掉。
     <value>文字 2</value>
   </data>
   <data name="CONVERSATION_ALPHA_2" xml:space="preserve">
-    <value>CONVERSATION ALPHA 2</value>
+    <value>對話文字 2</value>
   </data>
   <data name="DISCARD_CHANGED_SETTINGS" xml:space="preserve">
-    <value>All changes made to the settings will be discarded, do you want to continue?</value>
+    <value>即將捨棄所有變更的設定，是否繼續？</value>
   </data>
   <data name="SETTINGS_CHANGED" xml:space="preserve">
     <value>取消設定</value>
@@ -2223,16 +2219,16 @@ Française
 (پاکستان)</value>
   </data>
   <data name="DEFAULT_UILANGUAGE_TO_URDU" xml:space="preserve">
-    <value>We recommend changing the UiLanguage to Urdu to ensure typed Urdu text flows from right to left in the scratchpad.
-Would you like Optikey to automatically set the UiLanguage to Urdu?</value>
+    <value>我們建議變更介面語言為 Urdu 以確保輸入 Urdu 文字時文字框中的字是從右到左。
+您要讓 Optikey 自動將介面語言設定為 Urdu 嗎？</value>
   </data>
   <data name="FONTFAMILY_IS_NOT_COMPATIBLE_WITH_URDU_LANGUAGE" xml:space="preserve">
-    <value>We recommend changing the font used in Optikey to one which is fully compatible with Urdu.
-If a font is used which is not Urdu specific then text, and especially numbers, may display incorrectly.
-Would you like Optikey to automatically set the font to Nafees Web Naskh?</value>
+    <value>我們建議變更 Optikey 使用的字體為完整相容於 Urdu 的字體。
+如果使用非 Urdu 專用字體，文字尤其是數字可能會不正確的顯示。
+您要讓 Optikey 自動將字體設定為 Nafees Web Naskh 嗎？</value>
   </data>
   <data name="LANGUAGE_SPECIFIC_FONT_RECOMMENDED" xml:space="preserve">
-    <value>A language specific font is recommended</value>
+    <value>建議使用語言特定的字體</value>
   </data>
   <data name="UILANGUAGE_AND_KEYBOARDANDDICTIONARYLANGUAGE_DIFFER_TITLE" xml:space="preserve">
     <value>使用者介面和鍵盤／字典的語言不同</value>
@@ -2241,13 +2237,13 @@ Would you like Optikey to automatically set the font to Nafees Web Naskh?</value
     <value>在文字後方輸入特殊符號（變音等…）：</value>
   </data>
   <data name="DEFAULT_UILANGUAGE_TO_PERSIAN" xml:space="preserve">
-    <value>We recommend changing the UiLanguage to Persian to ensure typed Persian text flows from right to left in the scratchpad.
-Would you like Optikey to automatically set the UiLanguage to Persian?</value>
+    <value>我們建議變更介面語言為 Persian 以確保輸入 Persian 文字時文字框中的字是從右到左。
+您要讓 Optikey 自動將介面語言設定為 Persian 嗎？</value>
   </data>
   <data name="FONTFAMILY_IS_NOT_COMPATIBLE_WITH_PERSIAN_LANGUAGE" xml:space="preserve">
-    <value>We recommend changing the font used in optiKey to one which is fully compatible with Persian.
-If a font is used which is not Persian specific then text, and especially numbers, may display incorrectly.
-Would you like Optikey to automatically set the font to Nazli?</value>
+    <value>我們建議變更 Optikey 使用的字體為完整相容於 Persian 的字體。
+如果使用非 Persian 專用字體，文字尤其是數字可能會不正確的顯示。
+您要讓 Optikey 自動將字體設定為 Nazli 嗎？</value>
   </data>
   <data name="PERSIAN_IRAN" xml:space="preserve">
     <value>Persian (Iran) / فارسی (ایرانی)</value>
@@ -2328,22 +2324,22 @@ Magyar
     <value>這需要 Alienware 17 遊戲筆電，使用內建的 Tobii 眼動儀。</value>
   </data>
   <data name="GAZE_TRACKER_INFO" xml:space="preserve">
-    <value>This requires the ITU Gaze Tracking Library, which is a framework for open source eye tracking using off-the-shelf components, such as webcams and videocameras.</value>
+    <value>這需要 ITU Gaze Tracking Library，它是能讓您使用現成設備（例如攝影機、網路攝影機）的開放原始碼眼動追蹤框架，</value>
   </data>
   <data name="IRISBOND_DUO_INFO" xml:space="preserve">
     <value>如果您打算搭配 Irisbond Duo 眼動儀使用 Optikey，請確認您已安裝 Irisbond Duo 驅動程式。它可以從 https://www.irisbond.com/products/downloads 下載。</value>
   </data>
   <data name="MOUSE_POSITION_INFO" xml:space="preserve">
-    <value>In this mode, Optikey will use the mouse cursor as input instead of talking directly to an eye tracker. You might want this if you're testing Optikey out, or if you want to use it with an alternative input device such as a head mouse or any eye tracker not in this list.</value>
+    <value>在此模式下 Optikey 會使用滑鼠遊標位置作為輸入而不是直接和眼動儀互動。當您想要測試 Optikey 時，您可能會選擇這個模式，或是您想用其它替代輸入裝置，例如頭部滑鼠或未列入清單中的眼動儀。</value>
   </data>
   <data name="TOBII_ASSISTIVE_INFO" xml:space="preserve">
-    <value>To use Optikey with an assistive eye tracker, you either need the new version of Windows Control, or the Tobii Eye Tracking engine. If you need to use the old version of the Tobii Windows control application (including Tobii Gaze Interaction settings), then you will need to control Optikey using mouse position instead.</value>
+    <value>若要搭配輔助眼動儀來使用 Optikey，您需要安裝新版的 Windows Control 或 Tobii Eye Tracking 引擎。若您需要使用舊版的 Tobii Windows Control 程式（包含 Tobii Gaze Interaction 設定），您需要改用滑鼠位置控制 Optikey。</value>
   </data>
   <data name="TOBII_EYEX_INFO" xml:space="preserve">
     <value>此選項適用與任何 Tobii 遊戲眼動儀（5, 4C, EyeX, Alienware, Steelseries等）</value>
   </data>
   <data name="VI_MYGAZE_INFO" xml:space="preserve">
-    <value>The Visual Interaction myGaze is only supported if you've already installed the myGaze client drivers, which are no longer available for download. If you don't have these drivers installed, you should select use 'mouse position' instead, and use Optikey in combination with the myGaze EyeMousePlay application to move the cursor.</value>
+    <value>唯有在您已安裝 myGaze 客戶端驅動程式時，才支援 Visual Interaction myGaze，但它已經不再提供下載了。若您未安裝該驅動程式，你應改為選擇「滑鼠位置」，並搭配 myGaze EyeMousePlay 程式使用 Optikey 以移動遊標。</value>
   </data>
   <data name="OPACITY_LABEL" xml:space="preserve">
     <value>透明度：</value>

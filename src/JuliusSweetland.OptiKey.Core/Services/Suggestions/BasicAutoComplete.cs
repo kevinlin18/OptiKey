@@ -1,6 +1,8 @@
 ﻿// Copyright (c) 2020 OPTIKEY LTD (UK company number 11854839) - All Rights Reserved
+using JuliusSweetland.OptiKey.Enums;
 using JuliusSweetland.OptiKey.Extensions;
 using JuliusSweetland.OptiKey.Models;
+using JuliusSweetland.OptiKey.Properties;
 using log4net;
 using System;
 using System.Collections.Generic;
@@ -32,9 +34,12 @@ namespace JuliusSweetland.OptiKey.Services.Suggestions
             {
                 var inProgressWord = root == null ? null : root.InProgressWord(root.Length);
                 var simplifiedRoot = root.Normalise();
-
-                if (!string.IsNullOrEmpty(inProgressWord)
-                            && char.IsLetter(inProgressWord.First())) //A word must start with a letter
+                if ((!string.IsNullOrEmpty(inProgressWord)
+                            && char.IsLetter(inProgressWord.First()))//A word must start with a letter
+                    || (
+                    !string.IsNullOrEmpty(inProgressWord)
+                            && Settings.Default.KeyboardAndDictionaryLanguage == Languages.ChineseTraditionalTaiwan
+                    )) 
                 {
                     return
                         entries
@@ -46,7 +51,7 @@ namespace JuliusSweetland.OptiKey.Services.Suggestions
                             // of the phrase and one the first letter of each word so you can look them up by either)
                             .OrderByDescending(de => de.UsageCount)
                             .ThenBy(de => de.Entry.Length)
-                            .Select(de => de.Entry);
+                            .Select(de => de.EntryValue);
                 }
             }
 
@@ -78,10 +83,10 @@ namespace JuliusSweetland.OptiKey.Services.Suggestions
             {
                 if (entries.ContainsKey(autoCompleteHash))
                 {
-                    if (entries[autoCompleteHash].All(nwwuc => nwwuc.Entry != entry))
-                    {
+                    //if (entries[autoCompleteHash].All(nwwuc => nwwuc.Entry != entry))
+                    //{
                         entries[autoCompleteHash].Add(newEntryWithUsageCount);
-                    }
+                    //}
                 }
                 else
                 {

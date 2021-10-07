@@ -9,6 +9,11 @@ namespace JuliusSweetland.OptiKey.Enums
         Other,
 
         /// <summary>
+        /// 37 Chinese Bopomofo and 4 tone mark
+        /// </summary>
+        ChineseBopomofo,
+
+        /// <summary>
         /// A combined Hangul (Korean) syllable
         /// </summary>
         HangulSyllable,

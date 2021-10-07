@@ -162,7 +162,7 @@ namespace JuliusSweetland.OptiKey.Services.Suggestions
                 })
                 .OrderByDescending(x => x.Score)
                 .ThenByDescending(x => x.MetaData.UsageCount)
-                .Select(x => x.MetaData.Entry);
+                .Select(x => x.MetaData.EntryValue);
         }
 
         public void RemoveEntry(string entry)
@@ -215,7 +215,7 @@ namespace JuliusSweetland.OptiKey.Services.Suggestions
 		internal class EntryMetadata : DictionaryEntry
 		{
 			public EntryMetadata(string entry, int usageCount, int nGramCount)
-				: base(entry, usageCount)
+				: base(entry, entry, usageCount)
 			{
 				NGramCount = nGramCount;
 			}

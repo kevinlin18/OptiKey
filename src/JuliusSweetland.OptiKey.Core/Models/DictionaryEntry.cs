@@ -6,13 +6,15 @@ namespace JuliusSweetland.OptiKey.Models
     [DebuggerDisplay("'{Entry}' used {UsageCount}")]
     public class DictionaryEntry
     {
-        public DictionaryEntry(string entry, int usageCount = 0)
+        public DictionaryEntry(string entry, string entryValue, int usageCount = 0)
         {
             Entry = entry;
+            EntryValue = entryValue;
             UsageCount = usageCount;
         }
 
         public string Entry { get; private set; }
+        public string EntryValue { get; private set; }
 
         public int UsageCount { get; set; }
     }

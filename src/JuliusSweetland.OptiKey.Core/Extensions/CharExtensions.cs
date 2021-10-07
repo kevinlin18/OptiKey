@@ -9,12 +9,85 @@ namespace JuliusSweetland.OptiKey.Extensions
 {
     public static class CharExtensions
     {
+        private static readonly Map<char, char> ChineseBopomofo = new Map<char, char>();
+        private static readonly Map<char, char> ChineseCangjie = new Map<char, char>();
         private static readonly Map<char, char> HangulIntialToFinalConsonents = new Map<char, char>();
         private static readonly Map<char, char> HiraganaUpperToLowerCase = new Map<char, char>();
         private static readonly Map<char, char> KatakanaUpperToLowerCase = new Map<char, char>();
         
         static CharExtensions()
         {
+            //Chinese Bopomofo mappings
+            ChineseBopomofo.Add('\u3105', '1'); //ㄅ
+            ChineseBopomofo.Add('\u3106', 'q'); //ㄆ
+            ChineseBopomofo.Add('\u3107', 'a'); //ㄇ
+            ChineseBopomofo.Add('\u3108', 'z'); //ㄈ
+            ChineseBopomofo.Add('\u3109', '2'); //ㄉ
+            ChineseBopomofo.Add('\u310A', 'w'); //ㄊ
+            ChineseBopomofo.Add('\u310B', 's'); //ㄋ
+            ChineseBopomofo.Add('\u310C', 'x'); //ㄌ
+            ChineseBopomofo.Add('\u310D', 'e'); //ㄍ
+            ChineseBopomofo.Add('\u310E', 'd'); //ㄎ
+            ChineseBopomofo.Add('\u310F', 'c'); //ㄏ
+            ChineseBopomofo.Add('\u3110', 'r'); //ㄐ
+            ChineseBopomofo.Add('\u3111', 'f'); //ㄑ
+            ChineseBopomofo.Add('\u3112', 'v'); //ㄒ
+            ChineseBopomofo.Add('\u3113', '5'); //ㄓ
+            ChineseBopomofo.Add('\u3114', 't'); //ㄔ
+            ChineseBopomofo.Add('\u3115', 'g'); //ㄕ
+            ChineseBopomofo.Add('\u3116', 'b'); //ㄖ
+            ChineseBopomofo.Add('\u3117', 'y'); //ㄗ
+            ChineseBopomofo.Add('\u3118', 'h'); //ㄘ
+            ChineseBopomofo.Add('\u3119', 'n'); //ㄙ
+            ChineseBopomofo.Add('\u311A', '8'); //ㄚ
+            ChineseBopomofo.Add('\u311B', 'i'); //ㄛ
+            ChineseBopomofo.Add('\u311C', 'k'); //ㄜ
+            ChineseBopomofo.Add('\u311D', ','); //ㄝ
+            ChineseBopomofo.Add('\u311E', '9'); //ㄞ
+            ChineseBopomofo.Add('\u311F', 'o'); //ㄟ
+            ChineseBopomofo.Add('\u3120', 'l'); //ㄠ
+            ChineseBopomofo.Add('\u3121', '.'); //ㄡ
+            ChineseBopomofo.Add('\u3122', '0'); //ㄢ
+            ChineseBopomofo.Add('\u3123', 'p'); //ㄣ
+            ChineseBopomofo.Add('\u3124', ';'); //ㄤ
+            ChineseBopomofo.Add('\u3125', '/'); //ㄥ
+            ChineseBopomofo.Add('\u3126', '-'); //ㄦ
+            ChineseBopomofo.Add('\u3127', 'u'); //ㄧ
+            ChineseBopomofo.Add('\u3128', 'j'); //ㄨ
+            ChineseBopomofo.Add('\u3129', 'm'); //ㄩ
+            ChineseBopomofo.Add('\u02CA', '6'); //ˊ tone 2
+            ChineseBopomofo.Add('\u02C7', '3'); //ˇ tone 3
+            ChineseBopomofo.Add('\u02CB', '4'); //ˋ tone 4
+            ChineseBopomofo.Add('\u02D9', '7'); //˙ tone light
+
+            //Chinese Cangjie mapping
+            ChineseCangjie.Add('\u65e5', 'a'); //日
+            ChineseCangjie.Add('\u6708', 'b'); //月
+            ChineseCangjie.Add('\u91d1', 'c'); //金
+            ChineseCangjie.Add('\u6728', 'd'); //木
+            ChineseCangjie.Add('\u6c34', 'e'); //水
+            ChineseCangjie.Add('\u706b', 'f'); //火
+            ChineseCangjie.Add('\u571f', 'g'); //土
+            ChineseCangjie.Add('\u7af9', 'h'); //竹
+            ChineseCangjie.Add('\u6208', 'i'); //戈
+            ChineseCangjie.Add('\u5341', 'j'); //十
+            ChineseCangjie.Add('\u5927', 'k'); //大
+            ChineseCangjie.Add('\u4e2d', 'l'); //中
+            ChineseCangjie.Add('\u4e00', 'm'); //一
+            ChineseCangjie.Add('\u5f13', 'n'); //弓
+            ChineseCangjie.Add('\u4eba', 'o'); //人
+            ChineseCangjie.Add('\u5fc3', 'p'); //心
+            ChineseCangjie.Add('\u624b', 'q'); //手
+            ChineseCangjie.Add('\u53e3', 'r'); //口
+            ChineseCangjie.Add('\u5c38', 's'); //尸
+            ChineseCangjie.Add('\u5eff', 't'); //廿
+            ChineseCangjie.Add('\u5c71', 'u'); //山
+            ChineseCangjie.Add('\u5973', 'v'); //女
+            ChineseCangjie.Add('\u7530', 'w'); //田
+            ChineseCangjie.Add('\u96e3', 'x'); //難
+            ChineseCangjie.Add('\u535c', 'y'); //卜
+            ChineseCangjie.Add('\u91cd', 'z'); //重
+
             //Korean mappings
             HangulIntialToFinalConsonents.Add('\u1100', '\u11A8'); //ㄱ
             HangulIntialToFinalConsonents.Add('\u1101', '\u11A9'); //ㄲ
@@ -126,6 +199,15 @@ namespace JuliusSweetland.OptiKey.Extensions
                 return UnicodeCodePointRanges.HangulFinalConsonant;
             }
 
+            if ((codePoint >= 0x3105 && codePoint <= 0x3129)
+                || codePoint == 0x02CA
+                || codePoint == 0x02C7
+                || codePoint == 0x02CB
+                || codePoint == 0x02D9)
+            {
+                return UnicodeCodePointRanges.ChineseBopomofo;
+            }
+
             return UnicodeCodePointRanges.Other;
         }
 
@@ -157,6 +239,18 @@ namespace JuliusSweetland.OptiKey.Extensions
             return c;
         }
 
+        #endregion
+
+        #region (Chinese Bopomofo) Extension Methods
+
+        public static char BopomofoToQwerty(this char c)
+        {
+            if (ChineseBopomofo.Forward.ContainsKey(c))
+            {
+                return ChineseBopomofo.Forward[c];
+            }
+            return c;
+        }
         #endregion
 
         public static char ToggleCase(this char c)

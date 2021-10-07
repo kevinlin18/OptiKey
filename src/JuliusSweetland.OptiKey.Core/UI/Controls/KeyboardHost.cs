@@ -381,6 +381,9 @@ namespace JuliusSweetland.OptiKey.UI.Controls
                     case Languages.CatalanSpain:
                         newContent = new CatalanViews.ConversationAlpha1 { DataContext = Keyboard };
                         break;
+                    case Languages.ChineseTraditionalTaiwan:
+                        newContent = new ChineseTraditionalViews.ConversationAlpha1 { DataContext = Keyboard };
+                        break;
                     case Languages.CroatianCroatia:
                         newContent = new CroatianViews.ConversationAlpha1 { DataContext = Keyboard };
                         break;

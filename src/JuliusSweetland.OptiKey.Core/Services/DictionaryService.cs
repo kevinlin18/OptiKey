@@ -46,7 +46,7 @@ namespace JuliusSweetland.OptiKey.Services
         public void OnAppClosing(object sender, System.ComponentModel.CancelEventArgs e)
         {
             // Save entries to user file when leaving the app.
-            this.SaveUserDictionaryToFile();
+            //this.SaveUserDictionaryToFile();
         }
         #endregion
 
@@ -229,7 +229,19 @@ namespace JuliusSweetland.OptiKey.Services
                             }
 
                             hash = entry.NormaliseAndRemoveRepeatingCharactersAndHandlePhrases(false);
-                            managedSuggestions.AddEntry(entry, new DictionaryEntry(entry, usageCount), hash);
+                            managedSuggestions.AddEntry(entry, new DictionaryEntry(entry, entry, usageCount), hash);
+                        }
+                        else if (entryWithUsageCount.Length == 3) //Chinese
+                        {
+                            var entry = entryWithUsageCount[0];
+                            var entryValue = entryWithUsageCount[1];
+                            if (!int.TryParse(entryWithUsageCount[2], out usageCount))
+                            {
+                                usageCount = 0;
+                            }
+
+                            hash = entry.NormaliseAndRemoveRepeatingCharactersAndHandlePhrases(false);
+                            managedSuggestions.AddEntry(entry, new DictionaryEntry(entry, entryValue, usageCount), hash);
                         }
                     }
                 }
@@ -375,7 +387,7 @@ namespace JuliusSweetland.OptiKey.Services
                 var hash = entry.NormaliseAndRemoveRepeatingCharactersAndHandlePhrases(log: !loadedFromDictionaryFile);
                 if (!string.IsNullOrWhiteSpace(hash))
                 {
-                    var newEntryWithUsageCount = new DictionaryEntry(entry, usageCount);
+                    var newEntryWithUsageCount = new DictionaryEntry(entry, entry, usageCount);
 
                     //Also add to entries for auto complete
                     managedSuggestions.AddEntry(entry, newEntryWithUsageCount, hash);
